@@ -37,7 +37,7 @@ resource "abbey_grant_kit" "abbey_demo_site" {
   }
 
   policies = [
-    { bundle = "github://mkp33/test-repository/policies" } # CHANGEME
+    { bundle = "github://mkp33/test-repository/policies" }
   ]
 
   output = {
