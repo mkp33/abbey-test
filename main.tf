@@ -37,13 +37,13 @@ resource "abbey_grant_kit" "abbey_demo_site" {
   }
 
   policies = [
-    { bundle = "github://mkp33/abbey-test/policies/common.rego" }
+    { bundle = "github://mkp33/abbey-test/policies/common/common.rego" }
   ]
 
   output = {
     # Replace with your own path pointing to where you want your access changes to manifest.
     # Path is an RFC 3986 URI, such as `github://{organization}/{repo}/path/to/file.tf`.
-    location = "github://mkp33/test-repository/access.tf" # CHANGEME
+    location = "github://mkp33/abbey-test/outputs.tf" # CHANGEME
     append = <<-EOT
       resource "abbey_demo" "grant_read_write_access" {
         permission = "read_write"
