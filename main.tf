@@ -30,7 +30,7 @@ resource "abbey_grant_kit" "abbey_demo_site" {
     steps = [
       {
         reviewers = {
-          one_of = ["minkyu.park.personal@gmail.com"] # CHANGEME
+          one_of = ["minkyu.park.personal@gmail.com"]
         }
       }
     ]
